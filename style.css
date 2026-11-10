@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8f6;
+    color: #65413e;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #f9e9e5;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #955c57;
+}
+
+.icone-logo {
+    font-size: 55px;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.logo p {
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 3px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu ul li a {
+    color: #65413e;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #b16e69;
+}
+
+.botao-menu {
+    background-color: #a76763;
+    color: white !important;
+    padding: 12px 22px;
+    border-radius: 30px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5ded9;
+    min-height: 330px;
+    overflow: hidden;
+}
+
+.banner-texto {
+    width: 50%;
+    padding: 50px 7%;
+}
+
+.subtitulo {
+    color: #a76763;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.banner-texto h2 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.1;
+    color: #804d49;
+    margin-bottom: 18px;
+}
+
+.banner-texto p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.banner-imagem {
+    width: 50%;
+    height: 330px;
+}
+
+.banner-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #a76763;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #814c48;
+    transform: translateY(-3px);
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 40px 10%;
+    background-color: #fffaf8;
+}
+
+.sobre-imagem {
+    width: 45%;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.sobre-texto {
+    width: 50%;
+}
+
+.sobre-texto h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #804d49;
+    margin-bottom: 15px;
+}
+
+.sobre-texto p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tratamentos {
+    background-color: #f8e9e5;
+    padding: 30px 8%;
+    text-align: center;
+}
+
+.tratamentos h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #804d49;
+    margin-bottom: 25px;
+}
+
+.lista-tratamentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tratamento-item {
+    background-color: #fffaf8;
+    width: 31%;
+    min-width: 230px;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(130, 75, 70, 0.10);
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.tratamento-item:hover {
+    transform: translateY(-5px);
+}
+
+.tratamento-item img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tratamento-item h3 {
+    color: #65413e;
+    font-size: 16px;
+    margin: 10px 5px 5px;
+}
+
+.tratamento-item p {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.tratamento-item .preco {
+    color: #8e504c;
+    font-size: 18px;
+    margin: 8px 5px 12px;
+}
+
+.tratamento-item .botao {
+    display: block;
+    text-align: center;
+    margin: 8px 5px 3px;
+    padding: 12px 8px;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 5%;
+    background-color: #f9e9e5;
+}
+
+.beneficio-item {
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+    border-right: 1px solid #d9b3ac;
+}
+
+.beneficio-item:last-child {
+    border-right: none;
+}
+
+.beneficio-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #87534f;
+}
+
+.depoimentos {
+    background-color: #fff8f6;
+    padding: 35px 9%;
+}
+
+.depoimentos h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #804d49;
+    margin-bottom: 20px;
+}
+
+.lista-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.depoimento-item {
+    background-color: #fff;
+    width: 31%;
+    min-width: 220px;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(130, 75, 70, 0.10);
+}
+
+.estrelas {
+    color: #a76763;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.depoimento-item p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.depoimento-item h4 {
+    font-size: 13px;
+    color: #87534f;
+    margin-top: 12px;
+}
+
+.footer {
+    background-color: #95635c;
+    color: white;
+    padding: 35px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.footer-logo p {
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.footer-logo .icone-logo {
+    font-size: 48px;
+}
+
+.footer-contato {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.footer-whatsapp {
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-whatsapp a {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 12px 18px;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.footer-whatsapp a:hover {
+    background-color: white;
+    color: #95635c;
+}
+
+.direitos {
+    width: 100%;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-texto {
+        width: 100%;
+        padding: 35px 8%;
+    }
+
+    .banner-imagem {
+        width: 100%;
+        height: 250px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 30px 8%;
+    }
+
+    .sobre-imagem,
+    .sobre-texto {
+        width: 100%;
+    }
+
+    .tratamento-item {
+        width: 100%;
+    }
+
+    .beneficios {
+        flex-wrap: wrap;
+    }
+
+    .beneficio-item {
+        width: 50%;
+        border-right: none;
+    }
+
+    .depoimento-item {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+}
+
+.titulo-agendamento {
+    background-color: #fff8f6;
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.titulo-agendamento h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: #804d49;
+    margin-bottom: 15px;
+}
+
+.titulo-agendamento > p:last-child {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.area-agendamento {
+    background-color: #fff8f6;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 55px;
+}
+
+.formulario-agendamento {
+    background-color: #fffaf8;
+    width: 100%;
+    max-width: 650px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(130, 75, 70, 0.10);
+    border: 1px solid #f0dcd7;
+}
+
+.formulario-agendamento form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-agendamento label {
+    color: #87534f;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.formulario-agendamento input,
+.formulario-agendamento select,
+.formulario-agendamento textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e5c9c3;
+    border-radius: 12px;
+    background-color: #fffdfc;
+    color: #65413e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formulario-agendamento input:focus,
+.formulario-agendamento select:focus,
+.formulario-agendamento textarea:focus {
+    border-color: #a76763;
+    box-shadow: 0 0 5px rgba(167, 103, 99, 0.20);
+}
+
+.formulario-agendamento input::placeholder,
+.formulario-agendamento textarea::placeholder {
+    color: #b18b85;
+}
+
+.formulario-agendamento textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+.botao-agendamento {
+    background-color: #a76763;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 16px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-agendamento:hover {
+    background-color: #814c48;
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 768px) {
+
+    .titulo-agendamento {
+        padding: 35px 15px 20px;
+    }
+
+    .titulo-agendamento h2 {
+        font-size: 30px;
+    }
+
+    .area-agendamento {
+        padding: 15px 15px 35px;
+    }
+
+    .formulario-agendamento {
+        padding: 22px;
+    }
+
+}
